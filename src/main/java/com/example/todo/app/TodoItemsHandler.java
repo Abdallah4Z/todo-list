@@ -9,13 +9,13 @@ public class TodoItemsHandler {
     private TodoListDatabase database;
 
 
-    // Constructor to initialize the database and load todo items.
+    // Constructor to initialize the database and load to do items.
     public TodoItemsHandler() {
         initializeDatabase();
         this.todoItemList = readTodoListData();
     }
 
-    // Constructor to initialize the database with a predefined list of todo items
+    // Constructor to initialize the database with a predefined list of to do items
     public TodoItemsHandler(List<TodoItem> todoItemList) {
         initializeDatabase();
         this.todoItemList = new ArrayList<>(todoItemList);
@@ -30,7 +30,7 @@ public class TodoItemsHandler {
     }
 
 
-    // Adds a new todo item to the list and database
+    // Adds a new to do item to the list and database
     public void addTodoItem(TodoItem todoItem) {
         if (todoItem == null) {
             throw new IllegalArgumentException("TodoItem cannot be null");
@@ -40,7 +40,7 @@ public class TodoItemsHandler {
         database.insertTodo(todoItem);
     }
 
-    // Retrieves a todo item by its ID
+    // Retrieves the to do item by its ID
     public TodoItem getTodoItem(String id) {
         if (id == null) {
             throw new IllegalArgumentException("ID cannot be null or empty");
@@ -62,7 +62,7 @@ public class TodoItemsHandler {
         }
     }
 
-    // Updates a todo item in the database
+    // Updates the to do item in the database
     public void updateTodo(String id) {
         if (id == null) {
             throw new IllegalArgumentException("ID cannot be null or empty");
@@ -74,7 +74,7 @@ public class TodoItemsHandler {
         }
     }
 
-    // Reads all todo items from the database
+    // Reads all to do items from the database
     private List<TodoItem> readTodoListData() {
         return database.selectAllTodos();
     }
@@ -86,7 +86,7 @@ public class TodoItemsHandler {
     }
 
 
-    // Returns a list of all unique tags from all todo items
+    // Returns a list of all unique tags from all to do items
     public List<String> getAllUniqueTags() {
         Set<String> tags = new HashSet<>();
         for (TodoItem todoItem : todoItemList) {
@@ -98,7 +98,7 @@ public class TodoItemsHandler {
 
     /**
      * Generates a unique ID for a TodoItem.
-     * The ID starts with "TODO-" followed by 5 random digits (0-9).
+     * The ID starts with "TO DO-" followed by 5 random digits (0-9).
      * Ensures the generated ID is unique by checking against existing IDs in the todoItemList.
      */
     public String generateID() {
@@ -109,7 +109,7 @@ public class TodoItemsHandler {
         return generatedId;
     }
 
-    // Generates a random ID for a TodoItem starts with "TODO-" followed by 5 random digits (0-9)
+    // Generates a random ID for a TodoItem starts with "TO DO-" followed by 5 random digits (0-9)
     private String generateRandomId() {
         Random random = new Random();
         StringBuilder id = new StringBuilder("TODO-");
