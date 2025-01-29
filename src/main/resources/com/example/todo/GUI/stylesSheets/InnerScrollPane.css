@@ -1,0 +1,21 @@
+.scroll-pane {
+    -fx-background: #1f2937;
+    -fx-background-color: #1f2937;
+}
+
+.scroll-pane .viewport {
+    -fx-background: #1f2937;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #374151;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #111827;
+}
+
+.scroll-bar:hover .thumb {
+    -fx-background-color: #4b5563;
+}
+

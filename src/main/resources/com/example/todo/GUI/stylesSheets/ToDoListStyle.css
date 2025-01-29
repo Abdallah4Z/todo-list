@@ -1,0 +1,131 @@
+#hBox {
+    -fx-background-color: #1f2930;
+}
+
+#time {
+    -fx-text-fill: #e1e1e1;
+    -fx-font-size: 20px;
+}
+
+#header .button {
+    -fx-background-color: transparent;
+    -fx-cursor: Hand;
+}
+
+#header .button:hover {
+    -fx-translate-y: 1.2;
+}
+
+#header .button:focused {
+    -fx-border-color: #1f2930;
+    -fx-border-width: .3px;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
+
+/* Menu Button */
+.menu-button {
+    -fx-background-color: #1f2930;
+    -fx-border-width: 1px;
+    -fx-border-color: #797979;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 2 9;
+    -fx-cursor: Hand;
+}
+
+.menu-button .arrow {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.6;
+    -fx-border-color: gold;
+    -fx-padding: 3 5;
+}
+
+.menu-button:showing {
+    -fx-border-color: #bdbdbd;
+}
+
+.context-menu {
+    -fx-background-color: transparent;
+    -fx-border-color: #797979;
+    -fx-border-width: 1px;
+    -fx-border-radius: 1px;
+    -fx-background-radius: 1px;
+    -fx-padding: 5px;
+}
+
+.menu-item {
+    -fx-background-color: #1f2930;
+    -fx-text-fill: #e1e1e1;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Arial";
+    -fx-cursor: Hand;
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-text-fill: white;
+}
+
+.menu-item .label,
+.menu-item .graphic {
+    -fx-fill: inherit;
+}
+
+/* Progress Bar */
+.progress-bar {
+    -fx-pref-height: 10px;
+    -fx-background-color: #2d3748;
+    -fx-background-radius: 16px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #00ff00;
+}
+
+.progress-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* Checkbox */
+.check-box {
+    -fx-background-color: #1f2937;
+}
+
+.check-box .box {
+    -fx-background-color: #374151;
+    -fx-border-color: #374151;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #00ff00;
+    -fx-border-color: #00ff00;
+}
+
+.check-box:focused .box {
+    -fx-border-color: #2d3748;
+}
+
+.check-box:hover .box {
+    -fx-cursor: Hand;
+}
+
+.check-box .text {
+    -fx-fill: #b6b4b4;
+    -fx-font-size: 12px;
+}
+
+.check-box:selected .text {
+    -fx-fill: #FFFFFF;
+}
+
+#sub_t {
+    -fx-text-fill: #b6b4b4;
+}
+
+#title {
+    -fx-text-fill: #e5e5e5;
+}

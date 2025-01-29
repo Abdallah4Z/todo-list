@@ -1,0 +1,102 @@
+.tag {
+    -fx-background-color: transparent;
+    -fx-border-color: #374151;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 3 9;
+    -fx-text-fill: #e3e2e2;
+    -fx-font-size: 12px;
+}
+
+.tag:hover {
+    -fx-background-color: #e3e2e2;
+    -fx-text-fill: #1f2937;
+    -fx-border-color: #e3e2e2;
+    -fx-cursor: Hand;
+
+}
+
+.sub_t {
+    -fx-text-fill: #b6b4b4;
+}
+
+#title {
+    -fx-text-fill: #e5e5e5;
+}
+
+/* check box style */
+
+.check-box {
+    -fx-background-color: #1f2937;
+}
+
+.check-box .box {
+    -fx-background-color: #374151;
+    -fx-border-color: #374151;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #00ff00;
+    -fx-border-color: #00ff00;
+
+
+}
+
+.check-box .box,
+.check-box:focused .box {
+    -fx-background-color: #2d3748;
+}
+
+.check-box:hover .box {
+    -fx-cursor: Hand;
+}
+
+.check-box .text {
+    -fx-fill: #b6b4b4;
+    -fx-font-size: 12px;
+}
+
+.check-box:selected .text {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 12px;
+}
+
+
+#bottom_pane {
+    -fx-border-color: #b6b4b4;
+    -fx-border-width: 1 0 0 0;
+}
+
+#task_due {
+    -fx-text-fill: #b6b4b4;
+    -fx-font-size: 14px;
+}
+
+#time {
+    -fx-text-fill: #dcdcdc;
+    -fx-font-size: 16px;
+}
+
+#task_statue_label {
+    -fx-text-fill: #b6b4b4;
+    -fx-font-size: 12px;
+}
+
+/* progressbar Style */
+
+.progress-bar {
+    -fx-pref-height: 10px;
+    -fx-background-color: #2d3748;
+    -fx-background-radius: 16px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #00ff00;
+}
+
+.progress-bar .track {
+    -fx-background-color: transparent;
+}

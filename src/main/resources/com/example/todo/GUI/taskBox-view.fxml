@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="105.0" minHeight="105.0" onMouseClicked="#printId" prefHeight="105.0" prefWidth="344.0" stylesheets="@stylesSheets/ToDoListStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todo.GUI.TaskBoxController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="344.0" spacing="10.0" stylesheets="@stylesSheets/ToDoListStyle.css">
+         <children>
+            <CheckBox fx:id="checkBox" mnemonicParsing="false">
+               <HBox.margin>
+                  <Insets top="21.0" />
+               </HBox.margin>
+            </CheckBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="67.0" prefWidth="193.0">
+               <children>
+                  <Label id="sub_t" fx:id="subTitle" text="Label" />
+                  <Label id="title" fx:id="title" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="193.0" stylesheets="@stylesSheets/ToDoListStyle.css" text="Label" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <ProgressBar fx:id="progressBar" prefHeight="7.0" prefWidth="103.0" progress="0.33">
+               <HBox.margin>
+                  <Insets top="12.0" />
+               </HBox.margin>
+            </ProgressBar>
+            <Label fx:id="id" visible="false" />
+         </children>
+      </HBox>
+      <Label id="sub_t" fx:id="memo" alignment="TOP_LEFT" prefHeight="42.0" prefWidth="342.0" stylesheets="@stylesSheets/ToDoListStyle.css" text="Label" wrapText="true">
+         <padding>
+            <Insets left="32.0" />
+         </padding>
+      </Label>
+   </children>
+</VBox>

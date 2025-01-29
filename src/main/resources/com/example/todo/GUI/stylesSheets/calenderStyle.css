@@ -1,0 +1,102 @@
+/* Root, general styles and variables */
+.root {
+    -fx-background-color: #1f2930;
+}
+
+.label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Top bar styling */
+.top-bar {
+    -fx-background-color: #1f2930;
+    -fx-padding: 10px;
+}
+
+/* ComboBox styling */
+.combo-box {
+    -fx-background-color: #1f2930;
+    -fx-text-fill: #e1e1e1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #1f2930;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #1f2930;
+    -fx-text-fill: #e1e1e1;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #1f2930;
+    -fx-border-color: #e1e1e1;
+    -fx-border-radius: 12px;
+    -fx-padding: 0 0 0 10px;
+}
+
+.combo-box .list-cell:filled:hover,
+.combo-box .list-cell:filled:selected,
+.combo-box:hover,
+.combo-box:focused {
+    -fx-cursor: Hand;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* ScrollBar styling */
+.scroll-bar:vertical,
+.scroll-bar:horizontal,
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button,
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: #1f2930;
+    -fx-background-radius: 3px;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #e1e1e1;
+    -fx-background-radius: 3px;
+}
+
+
+/* Label styling for days of the week */
+.day-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+}
+
+/* Day cell styling */
+.day-box {
+    -fx-background-color: #1f2930;
+    -fx-border-color: #8f8f8f;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 5px;
+    -fx-alignment: center;
+}
+
+.day-cell {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e1e1e1;
+    -fx-pref-height: 40px;
+    -fx-text-alignment: center;
+
+}
+
+/* Hover effect for day cells */
+.day-box:hover {
+    -fx-translate-y: 1.1;
+    -fx-cursor: Hand;
+}

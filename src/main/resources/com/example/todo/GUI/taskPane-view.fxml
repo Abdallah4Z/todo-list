@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #1f2937;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todo.GUI.TaskPaneController">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" prefHeight="518.0" prefWidth="598.0">
+         <children>
+            <VBox layoutX="27.0" layoutY="14.0" prefHeight="502.0" prefWidth="546.0" spacing="5.0">
+               <children>
+                  <Label id="sub_t" fx:id="subTitle" stylesheets="@stylesSheets/tags.css" text="Label" textFill="WHITE" />
+                  <Label id="title" fx:id="title" alignment="TOP_LEFT" prefHeight="32.0" prefWidth="545.0" style="-fx-text-fill: #FFFDFF;" stylesheets="@stylesSheets/tags.css" text="Label" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox fx:id="tagsBox" prefHeight="41.0" prefWidth="200.0" spacing="3.0" stylesheets="@stylesSheets/tags.css">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label id="sub_t" fx:id="memo" stylesheets="@stylesSheets/tags.css" text="Label" wrapText="true">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </Label>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="319.0" prefWidth="546.0" stylesheets="@stylesSheets/InnerScrollPane.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <content>
+                        <VBox fx:id="tasksPane" prefHeight="316.0" prefWidth="543.0" spacing="10.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane id="bottom_pane" layoutX="34.0" layoutY="522.0" prefHeight="63.0" prefWidth="531.0" stylesheets="@stylesSheets/tags.css">
+         <children>
+            <Label id="task_due" layoutX="72.0" layoutY="10.0" prefHeight="17.0" prefWidth="111.0" stylesheets="@stylesSheets/tags.css" text="Task due:" textFill="#a6a6a6" />
+            <Label id="time" fx:id="date" layoutX="72.0" layoutY="28.0" stylesheets="@stylesSheets/tags.css" text="Today, 16:30" />
+            <Label id="task_statue_label" layoutX="409.0" layoutY="11.0" stylesheets="@stylesSheets/tags.css" text="task statue" />
+            <ProgressBar fx:id="progressBar" layoutX="409.0" layoutY="34.0" prefHeight="17.0" prefWidth="111.0" progress="0.31" stylesheets="@stylesSheets/tags.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
